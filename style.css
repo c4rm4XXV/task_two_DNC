@@ -10,7 +10,7 @@
     
 }
 :root{
-    --primary:#BABABA;
+    --primary: #F2F2F2;
     --secondary:#0C70F2;
 }
 
@@ -20,4 +20,20 @@
 
 .bg-secondary{
     background-color: var(--secondary)!important;
+}
+
+.navbar-brand{
+    font-weight:800;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.nav-link{
+    font-size: 25px;
+    font-weight: 800;
+    color: #ffffff !important;
 }
