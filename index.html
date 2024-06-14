@@ -20,13 +20,13 @@
 
     </head>
     <body class="bg-primary">
-        <nav class="navbar navbar-expand-lg bg-secondary px-5">
-            <div class="container-fluid mt-2 col">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary px-5">
+            <div class="container mt-2 col">
                 <a href="#" class="navbar-brand">DncWeather</a>
                 <buttton class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </buttton>
-                <div class="collapse navbar-collapse justify-content-md-end" id="menuNavbar">
+                <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-5">
                             <a href="#" class="nav-link active">Endereços</a>
@@ -38,43 +38,55 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid row mt-5 justify-content-md-center " id="top_div">
-            <div class="container col-3" id="top_div_text">
-                <h1>Descubra Mais com Precisão: <br>
-                    Previsões do Tempo e endereços<br>
-                    em tempo real.</h1>
+        <div class="container mt-6">
+            <div class="row">
+                <div class="col d-flex justify-content-end me-5">
+                    <h1>Descubra Mais com Precisão: <br>
+                        Previsões do Tempo e endereços<br>
+                        em tempo real.</h1>
+                </div>
+                <div class="col-4">
+                    <img src="img/cloud.svg" alt="cloud">
+                </div>                
             </div>
-            <div class="container col-2" id="top_div_img">
-                <img src="img/cloud.svg" alt="cloud">
+            <div class="row mt-6">
+                <div class="col col-md-8 offset-md-2 bg-white p-6 rounded-5">
+                    <form>
+                        <div class="mb-4 input-group-lg">
+                            <label class="form-label mb-3 ">Primeiro Nome:</label>
+                            <input type="text" id="primeiro_nome" class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3" placeholder="Insira seu primeiro nome:">
+                        </div>
+                        <div class="mb-4 input-group-lg">
+                            <label class="form-label mb-3">E-mail:</label>
+                            <input type="text" id="e_mail" class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3" placeholder="Insira seu e-mail">
+                        </div>
+                        <div class="mb-4 input-group-lg">
+                            <label class="form-label mb-3">Digite o CEP:</label>
+                            <input type="text" id="CEP" class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3" placeholder="Insira o CEP">
+                        </div>
+                        <div class="row">
+                            <label class="form-label mb-3">Digite a latitude e longitude para saber a previsão:</label>
+                            <div class="col mb-5 input-group-lg">
+                                <input type="text" id="latitude" class="form-control bg-primary opacity-75  rounded-3 ps-3 " placeholder="Latitude">
+                                
+                            </div>
+                            <div class="col mb-5 input-group-lg">
+                                <input type="text" id="longitude" class="form-control bg-primary opacity-75 rounded-3 ps-3" placeholder="longitude">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mt-5">                                                
+                            <button type="submit" class="btn btn-secondary btn-lg">Acessar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        
 
         <div class="container-sm mt-5">
             <div class="row justify-content-md-center">
                 <div class="col col-lg-6">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Primeiro Nome:</label>
-                            <input type="text" id="primeiro_nome" class="form-control" placeholder="Insira seu primeiro nome:">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">E-mail:</label>
-                            <input type="text" id="e_mail" class="form-control" placeholder="Insira seu e-mail">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Digite o CEP:</label>
-                            <input type="text" id="CEP" class="form-control" placeholder="Insira o CEP">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Digite a latitude e longitude para saber a previsão:</label>
-                            <div class="container-sm row" row>
-                                <input type="text" id="latitude" class="form-control" placeholder="Latitude">
-                                <input type="text" id="longitude" class="form-control" placeholder="longitude">
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>

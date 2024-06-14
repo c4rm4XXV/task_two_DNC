@@ -22,6 +22,9 @@
     background-color: var(--secondary)!important;
 }
 
+.btn-secondary{
+    background-color: var(--secondary)!important; 
+}
 .navbar-brand{
     font-weight:800;
     font-size: 50px;
@@ -36,4 +39,17 @@
     font-size: 25px;
     font-weight: 800;
     color: #ffffff !important;
+}
+
+.mt-6{
+    margin-top: 10rem !important;
+}
+
+.p-6{
+    padding: 5rem !important;
+}
+
+.form-label{
+    font-size: 25px;
+
 }
