@@ -3,10 +3,10 @@
 ## Finalidade da pagina:
 Este código cria uma página web que permite ao usuário consultar endereços e previsões do tempo.
 
-## Inntruções de uso:
-O usuário digita o CEP no campo designado e clica em "Acessar".
+## Instruções de uso:
+O usuário preenche todos os campos e clica em "Acessar".
 A página busca a informação do endereço através da API ViaCEP (https://viacep.com.br/) e preenche os campos "Logradouro/Nome", "Bairro/Distrito" e "Localidade/UF" com os dados obtidos.
-O usuário também pode digitar latitude e longitude para consultar a previsão do tempo na região. A página utiliza a API OpenWeatherMap (https://openweathermap.org/api) para buscar a temperatura e exibi-la na seção "Previsão do tempo na região".
+A página também busca informações do clima usando latitude e longitude.A API OpenWeatherMap (https://openweathermap.org/api) é ultilizada para buscar a temperatura e exibi-la na seção "Previsão do tempo na região".
 
 
 ## Tecnologias utilizadas:
