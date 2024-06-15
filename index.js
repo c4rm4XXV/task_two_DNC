@@ -19,7 +19,7 @@ async function getAddbyMeteo(){
         const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m`);
         const data = await response.json();         
         document.getElementById("previTemp").innerHTML=`
-            <p id="previTemp">Previsão de tempo de acordo com a região:${data.hourly.temperature_2m[data.hourly.temperature_2m.length-1]}° C </p>
+            <p id="previTemp">Previsão de tempo de acordo com a região:${data.hourly.temperature_2m[0]}° C </p>
         `;         
     } catch (error) {
         alert(error)
