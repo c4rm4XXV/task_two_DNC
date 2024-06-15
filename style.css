@@ -67,3 +67,7 @@ h1 {
 .fs-6{
     font-weight: 500;
 }
+
+.table-header {
+  font-size: 70%;
+}
