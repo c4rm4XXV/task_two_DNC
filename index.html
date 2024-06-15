@@ -2,7 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>DNC - task 2</title>
 
     <link
@@ -14,8 +17,8 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-primary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary px-2">
+  <body class="background">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-2">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">DncWeather</a>
         <button
@@ -35,13 +38,14 @@
             </li>
             <li class="nav-item">
               <a href="#campoPrevTemp" class="nav-link active"
-                >Previsão do tempo</a>
+                >Previsão do tempo</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
+
     <div class="container mt-3">
       <div class="row">
         <div
@@ -67,17 +71,17 @@
                 type="text"
                 id="primeiro_nome"
                 required
-                class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3"
+                class="form-control opacity-80 p-1 rounded-3 ps-3"
                 placeholder="Fulano de Tal"
               />
             </div>
             <div class="mb-4 input-group-lg">
               <label class="form-label mb-3">E-mail:</label>
               <input
-                type="text"
+                type="email"
                 id="e_mail"
                 required
-                class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3"
+                class="form-control opacity-80 p-1 rounded-3 ps-3"
                 placeholder="fulano.detal@email.com"
               />
             </div>
@@ -87,18 +91,20 @@
                 type="text"
                 id="inputCep"
                 required
-                class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3"
+                class="form-control opacity-80 p-1 rounded-3 ps-3"
                 placeholder="12345-678"
               />
             </div>
             <div class="row">
-              <label class="form-label mb-3">Digite a latitude e longitude para saber a previsão:</label>
+              <label class="form-label mb-3"
+                >Digite a latitude e longitude para saber a previsão:</label
+              >
               <div class="col mb-5 input-group-lg">
                 <input
                   type="text"
                   id="latitude"
                   required
-                  class="form-control bg-primary opacity-75 rounded-3 ps-3"
+                  class="form-control opacity-80 rounded-3 ps-3"
                   placeholder="Latitude"
                 />
               </div>
@@ -107,7 +113,7 @@
                   type="text"
                   id="longitude"
                   required
-                  class="form-control bg-primary opacity-75 rounded-3 ps-3"
+                  class="form-control opacity-80 rounded-3 ps-3"
                   placeholder="Longitude"
                 />
               </div>
@@ -124,7 +130,7 @@
           </form>
         </div>
       </div>
-    
+
       <div class="row mt-4" id="campoCep">
         <div class="col d-flex justify-content-end align-items-center">
           <h1>Resultado da busca por CEP:</h1>
@@ -134,29 +140,34 @@
         </div>
       </div>
 
-      <div class="row mt-5 offset-md-1">
-        <div class="row bg-secondary rounded-top-5">
-          <div
-            class="col d-flex justify-content-around h5 align-items-center pt-4"
-          >
-            <p>Logradouro/Nome</p>
-            <p>Bairro/Distrito</p>
-            <p>Localidade/UF</p>
-          </div>
-        </div>
-    
-        <div
-          class="row bg-white rounded-bottom-5 d-flex h4 justify-content-around py-2"
-        >
-          <div
-            class="col d-flex justify-content-around align-items-center pt-3"
-          >
-            <p id="rua">---</p>
+      <table class="container">
+        <thead>
+          <tr class="row text-light mt-5 offset-md-1 bg-primary rounded-top-5">
+            <th class="col d-flex justify-content-around h5 align-items-center pt-4">
+              <p>Rua</p>
+            </th>
+            <th class="col d-flex justify-content-around h5 align-items-center pt-4">
+              <p>Bairro</p>
+            </th>
+            <th class="col d-flex justify-content-around h5 align-items-center pt-4">
+              <p>UF</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row bg-white rounded-bottom-5 d-flex h4 justify-content-around py-2">
+            <td class="col d-flex justify-content-around align-items-center pt-3">
+              <p id="rua">---</p>
+            </td>
+            <td class="col d-flex justify-content-around align-items-center pt-3">
             <p id="bairro">---</p>
+            </td>
+            <td class="col d-flex justify-content-around align-items-center pt-3">
             <p id="uf">---</p>
-          </div>
-        </div>
-      </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <div class="row mt-5" id="campoPrevTemp">
         <div class="col d-flex justify-content-end align-items-center">
@@ -174,13 +185,15 @@
         </div>
       </div>
     </div>
-    <footer class="bg-secondary mt-6">
-      <div class="container text-end py-2">
+
+    <footer class="bg-primary mt-5">
+      <div class="container text-center text-light py-2">
         <a href="" class="nav-link active fs-6"
           >Termos de Uso | Política de Privacidade</a
         >
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

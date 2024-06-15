@@ -13,16 +13,16 @@
   --secondary: #0c70f2;
 }
 
-.bg-primary {
-  background-color: var(--primary) !important;
+.background {
+  background-color: var(--primary);
 }
 
 .bg-secondary {
-  background-color: var(--secondary) !important;
+  background-color: var(--secondary);
 }
 
 .btn-secondary {
-  background-color: var(--secondary) !important;
+  background-color: var(--secondary);
 }
 
 .navbar-brand {
@@ -36,15 +36,15 @@
 }
 
 .mt-6 {
-  margin-top: 10rem !important;
+  margin-top: 10rem;
 }
 
 .mt-7 {
-  margin-top: 15rem !important;
+  margin-top: 15rem;
 }
 
 .p-6 {
-  padding: 5rem !important;
+  padding: 5rem;
 }
 
 .form-label {
@@ -60,3 +60,10 @@ h1 {
   width: 100%;
 }
 
+.border-secondary{
+    border-color: var(--secondary);
+}
+
+.fs-6{
+    font-weight: 500;
+}
