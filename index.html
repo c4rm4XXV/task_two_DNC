@@ -29,10 +29,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-5">
-                            <a href="#" class="nav-link active">Endereços</a>
+                            <a href="#campoCep" class="nav-link active">Endereços</a>
                         </li>
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active">Previsão do tempo</a>
+                            <a href="#campoPrevTemp" class="nav-link active">Previsão do tempo</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="mb-4 input-group-lg">
                             <label class="form-label mb-3">Digite o CEP:</label>
-                            <input type="text" id="CEP" required class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3" placeholder="Insira o CEP">
+                            <input type="text" id="inputCep" required class="form-control bg-primary opacity-75 p-1 rounded-3 ps-3" placeholder="Insira o CEP">
                         </div>
                         <div class="row">
                             <label class="form-label mb-3">Digite a latitude e longitude para saber a previsão:</label>
@@ -75,12 +75,12 @@
                             </div>
                         </div>
                         <div class="d-grid gap-2 mt-5">                                                
-                            <button type="submit" class="btn btn-secondary btn-lg">Acessar</button>
+                            <button type="button" class="btn btn-secondary btn-lg" onclick="getAddbyCep(); getAddbyMeteo()">Acessar</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="row mt-7">
+            <div class="row mt-7" id="campoCep">
                 <div class="col d-flex justify-content-end align-items-center">
                     <h1>Resultado da busca por CEP:</h1>
                 </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5 offset-md-1">
+            <div class="row mt-5 offset-md-1" >
                 <div class="row bg-secondary rounded-top-5 ">
                     <div class="col d-flex justify-content-around h5 align-items-center pt-4">
                         <p>Logradouro/Nome</p>
@@ -112,14 +112,14 @@
 -->
                 <div class="row bg-white rounded-bottom-5 d-flex h4 justify-content-around py-2">
                     <div class="col d-flex justify-content-around align-items-center pt-3">
-                        <p id="rua">Ponta Grossa</p>
-                        <p id="bairro">São Cristovão</p>
-                        <p id="uf">PR</p>
+                        <p id="rua">---</p>
+                        <p id="bairro">---</p>
+                        <p id="uf">---</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 " id="campoPrevTemp">
                 <div class="col d-flex justify-content-end align-items-center">
                     <h1>Previsão do tempo na região:</h1>
                 </div>
@@ -129,7 +129,7 @@
             </div>
             <div class="row offset-md-1 mt-2">
                 <div class="col d-flex h4 rounded-5 border border-secondary pt-3 justify-content-center bg-white">
-                    <p id="previTemp">Previsão de tempo de acordo com a região: 24° C</p>
+                    <p id="previTemp">Previsão de tempo de acordo com a região: --° C</p>
                 </div>
             </div>
         </div>      
