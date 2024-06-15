@@ -1,81 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
-    
-}
-:root{
-    --primary: #f2f2f2;
-    --secondary:#0C70F2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
-.bg-primary{
-    background-color: var(--primary)!important;
+:root {
+  --primary: #f2f2f2;
+  --secondary: #0c70f2;
 }
 
-.bg-secondary{
-    background-color: var(--secondary)!important;
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
-.btn-secondary{
-    background-color: var(--secondary)!important; 
-}
-.navbar-brand{
-    font-weight:800;
-    font-size: 50px;
-    color: #ffffff;
+.bg-secondary {
+  background-color: var(--secondary) !important;
 }
 
-.navbar-brand:hover{
-    color: #ffffff;
+.btn-secondary {
+  background-color: var(--secondary) !important;
 }
 
-.nav-link{
-    font-size: 25px;
-    font-weight: 800;
-    color: #ffffff !important;
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.75rem;
 }
 
-.mt-6{
-    margin-top: 10rem !important;
+.nav-link {
+  font-size: 1rem;
+  font-weight: 800;
 }
 
-.mt-7{
-    margin-top: 15rem !important;
+.mt-6 {
+  margin-top: 10rem !important;
 }
 
-.p-6{
-    padding: 5rem !important;
+.mt-7 {
+  margin-top: 15rem !important;
 }
 
-.form-label{
-    font-size: 25px;
+.p-6 {
+  padding: 5rem !important;
 }
 
-h1{
-    font-weight: 800; 
-    font-size: 40px;
+.form-label {
+  font-size: 1.2rem;
 }
 
-.h5{
-    font-weight: 800; 
-    font-size: 20px;
-    color: #ffffff !important;
-}
-.h4{
-    font-weight: 800; 
-    font-size: 20px;
-    color: black !important;
+h1 {
+  font-weight: 800;
+  font-size: 1.75rem;
 }
 
-.border-secondary{
-    border-color: var(--secondary)!important;
+.custom-icon {
+  width: 100%;
 }
-.fs-6{
-    font-weight: 500;
+
+/* Table */
+table {
+  width: 100%;
+  border-radius: 25%;
+}
+
+thead > tr,
+tbody > tr {
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  color: white;
+}
+
+tbody > tr {
+  background-color: white;
+  color: black;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+td {
+  height: 2.5rem;
 }
