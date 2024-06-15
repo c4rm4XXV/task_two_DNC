@@ -60,31 +60,3 @@ h1 {
   width: 100%;
 }
 
-/* Table */
-table {
-  width: 100%;
-  border-radius: 25%;
-}
-
-thead > tr,
-tbody > tr {
-  display: flex;
-  justify-content: space-around;
-  background-color: blue;
-  color: white;
-}
-
-tbody > tr {
-  background-color: white;
-  color: black;
-}
-
-th,
-td {
-  padding: 0.75rem;
-  text-align: center;
-}
-
-td {
-  height: 2.5rem;
-}
