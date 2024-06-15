@@ -10,7 +10,7 @@
     
 }
 :root{
-    --primary: #F2F2F2;
+    --primary: #BABABA ;
     --secondary:#0C70F2;
 }
 
@@ -60,4 +60,22 @@
 h1{
     font-weight: 800; 
     font-size: 40px;
+}
+
+.h5{
+    font-weight: 800; 
+    font-size: 20px;
+    color: #ffffff !important;
+}
+.h4{
+    font-weight: 800; 
+    font-size: 20px;
+    color: black !important;
+}
+
+.border-secondary{
+    border-color: var(--secondary)!important;
+}
+.fs-6{
+    font-weight: 500;
 }
